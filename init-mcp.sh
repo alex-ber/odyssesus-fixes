@@ -8,6 +8,12 @@ if ! command -v uvx &> /dev/null; then
     pip install --user uv==0.11.17
 fi
 
+# Install llama-cpp-python with pre-built wheels for CUDA 13.0
+# Using --user to install safely into /app/.local without requiring root privileges.
+# This enables hardware acceleration for GGUF models using the host's NVIDIA GPU.
+echo "Ensuring llama-cpp-python is installed with CUDA 13.0 support..."
+pip install --user llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu130
+
 FLAG_FILE="/app/data/.mcp_setup_done"
 
 if [ ! -f "$FLAG_FILE" ]; then
