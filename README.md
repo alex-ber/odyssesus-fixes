@@ -65,6 +65,7 @@ docker compose up -d
 
 ```bash
 docker compose config
+docker compose exec odysseus bash
 docker compose ps
 docker compose logs --tail=120 odysseus
 docker compose logs odysseus | grep -E 'ChromaDB|MemoryVectorStore|DEGRADED'
