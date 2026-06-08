@@ -8,7 +8,6 @@ echo "PGID=$(id -g)" >> .env
 
 #PUID=1000
 #PGID=1000
-
 ```
 
 Change in .env
