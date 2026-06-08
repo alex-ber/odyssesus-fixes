@@ -1,0 +1,36 @@
+# Normalize line endings so a Windows checkout (git core.autocrlf=true) can't
+# corrupt shell-script shebangs. A CRLF `#!/bin/sh\r` makes the kernel look for
+# an interpreter literally named "/bin/sh\r", producing the Docker startup error
+# "exec /usr/local/bin/entrypoint.sh: no such file or directory" (issues #150, #77).
+* text=auto
+
+# Shell scripts must stay LF on every platform (run by sh/bash, incl. in Docker).
+*.sh   text eol=lf
+*.bash text eol=lf
+
+# Configuration templates should always use LF.
+*.example text eol=lf
+
+# SVG is technically a text file, but Git sometimes may be confused and treat it as binary.
+*.svg text eol=lf
+
+# Windows-native scripts stay CRLF.
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary assets — never normalize.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.pdf  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+
+# Hide generated files from GitHub/GitLab language statistics and PR diffs.
+package-lock.json linguist-generated=true
+dist/** linguist-generated=true
+static/js/editor/build/** linguist-generated=true

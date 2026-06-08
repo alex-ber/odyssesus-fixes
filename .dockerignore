@@ -1,0 +1,61 @@
+# 1. Version Control & Docker
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+*docker-compose*
+
+# 2. Virtual Environments & Dependencies
+venv/
+.venv/
+node_modules/
+services/node_modules/
+
+# 3. Python Caches & Build Artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# 4. Environments & Secrets
+.env*
+
+# 5. IDEs & Dev Tools
+.vscode/
+.idea/
+.claude/
+.playwright-mcp/
+
+# 6. Local Data & Databases
+/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# 7. Logs, Analytics & Reports
+/logs/
+*.log
+*.error.log
+/reports/
+/research_data/
+search_analytics.json
+**/search_analytics.json
+
+# 8. Documentation & Temp Files
+docs/
+dev-docs/
+*.md
+tasks/
+_scratch/
+compound.config.json
+
+# 9. OS System Files
+.DS_Store
+Thumbs.db

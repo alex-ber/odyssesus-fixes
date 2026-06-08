@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+!static/js/editor/build/
+venv/
+.venv/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env*
+!*.example
+
+# Data — all user data stays local
+/data/
+/logs/
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Node
+node_modules/
+/services/node_modules/
+/services/data/
+.npm/
+.eslintcache
+
+# IDE / Editor
+.aider*
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test capture artifacts (browser session dumps may contain personal content)
+.playwright-mcp/
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+*.cache
+cache/
+
+# Media (uploaded/generated)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.webp
+*.tiff
+*.pdf
+
+# …except shipped demo assets in docs/ that the README links to.
+!docs/*.jpg
+!docs/*.jpeg
+!docs/*.png
+!docs/*.gif
+!docs/*.webp
+# …and curated docs/ subfolder assets (e.g. accessibility before/after shots).
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.gif
+!docs/**/*.webp
+
+# Reports and temp files
+/reports/
+/tasks/
+scripts/compound/*.json
+/research_data/
+**/search_analytics.json
+
+# Internal dev/review notes — not for public repo
+/dev-docs/
+# Windows-port working docs (local only, not for public repo)
+docs/windows-port/
+
+# Local config
+compound.config.json
+_scratch/
