@@ -1,3 +1,25 @@
+https://github.com/pewdiepie-archdaemon/odysseus
+https://huggingface.co/unsloth/DeepSeek-R1-0528-Qwen3-8B-GGUF
+https://unsloth.ai/docs/models/tutorials/deepseek-r1-0528-how-to-run-locally#run-qwen3-distilled-r1-in-llama.cpp
+
+https://grok.com/c/adc45b27-85a7-4b2c-9ee3-5b242045e826?rid=ecc58985-5d58-40b7-a420-c2efe6ba01af
+Odesyy. What do to?
+
+...01:17 PM
+No chat session active. You can:
+
+* Open the model picker in the chat box and pick a model
+
+* Use the + button in the model picker to add a model endpoint
+
+* Use /help to see all available commands
+
+
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=24.04&target_type=deb_local
+s
+
+
+
 ```bash
 git clone https://github.com/pewdiepie-archdaemon/odysseus.git
 cd odysseus
