@@ -8,3 +8,6 @@ services:
     # Clean command: directly invoke bash, pass our script to it,
     # and everything else is forwarded into the script as arguments ($@)
     command: ["bash", "/init-mcp.sh", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7000"]
+
+    environment:
+      HF_HUB_DISABLE_XET: "1"

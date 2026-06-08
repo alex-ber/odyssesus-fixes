@@ -37,7 +37,7 @@ Change in .env
 ```bash
 SEARXNG_INSTANCE=http://localhost:8085
 AUTH_ENABLED=false
-COMPOSE_FILE=docker-compose.yml:docker-compose.mcp.yml:docker-compose-mygpu.nvidia.yml
+COMPOSE_FILE=docker-compose.yml:docker-compose.mcp.yml:docker/gpu.nvidia.yml
 ```
 
 cp ../odyssesus-fixes/docker-compose.mcp.yml .
