@@ -20,6 +20,7 @@ s
 
 TODO:
 * Поместисть вызов init.sh в entrypoint или вообще переместить в Dockerfile.
+* nvidia-smi
 
 
 ```bash
