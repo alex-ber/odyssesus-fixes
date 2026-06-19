@@ -43,7 +43,7 @@ node_modules/
 # IDE / Editor
 .aider*
 .claude/
-.vscode/
+#.vscode/
 .idea/
 *.swp
 *.swo
